@@ -1,0 +1,8 @@
+
+Pinging 142.251.12.103 with 32 bytes of data:
+Request timed out.
+Reply from 192.168.182.1: Destination port unreachable.
+Reply from 192.168.182.1: Destination port unreachable.
+
+Ping statistics for 142.251.12.103:
+    Packets: Sent = 3, Received = 2, Lost = 1 (33% loss),

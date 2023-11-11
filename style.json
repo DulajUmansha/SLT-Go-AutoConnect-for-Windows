@@ -1,0 +1,21 @@
+{
+	"QStackedWidget":[
+		{
+			"name":"stackedWidget",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"disconnectBtn": "page_disconnect",
+							"connectBtn" : "page_connect",
+							"aboutBtn": "page_about",
+							"profileBtn": "page_Profile",
+							"homeBtn" : "page_Logo"
+						}
+					]
+				}
+			]
+	
+		}
+	]
+}
