@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>__Interface__/resource/image/SLTGO_logo1.jpeg</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>__Interface__/resource/icon/AF_FON_RGB_white.png</file>
+        <file>__Interface__/resource/icon/disk.svg</file>
+        <file>__Interface__/resource/icon/home.svg</file>
+        <file>__Interface__/resource/icon/info.svg</file>
+        <file>__Interface__/resource/icon/link.svg</file>
+        <file>__Interface__/resource/icon/link-slash.svg</file>
+        <file>__Interface__/resource/icon/SLTGO_logo2.jpeg</file>
+        <file>__Interface__/resource/icon/user.svg</file>
+    </qresource>
+</RCC>

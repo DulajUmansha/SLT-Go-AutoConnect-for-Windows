@@ -2,7 +2,8 @@
 import sys
 import PySide6.QtGui
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_mainwindow import Ui_MainWindow as mainWindowUI
+from __Interface__.ui_mainwindow import Ui_MainWindow as mainWindowUI
+from __Interface__.rc_resource import *
 #from Custom_Widgets.Widgets import loadJsonStyle
 from logic import SLTLogin,WiFiLogin
 import threading
@@ -20,6 +21,9 @@ class MainWindow(QMainWindow):
     def buttonClick(self):
         self.mainWindow.connectBtn.clicked.connect(self.connectBtn)
         self.mainWindow.disconnectBtn.clicked.connect(self.disconnectBtn)
+        self.mainWindow.profileBtn.clicked.connect(lambda:self.mainWindow.stackedWidget.setCurrentIndex(5))
+        self.mainWindow.homeBtn.clicked.connect(lambda:self.mainWindow.stackedWidget.setCurrentIndex(4))
+        self.mainWindow.saveBtn.clicked.connect(self.saveCredential)
 
     def connectBtn(self,tryCount=0)->None:
         self.mainWindow.connectBtn.setEnabled(False)
@@ -66,6 +70,17 @@ class MainWindow(QMainWindow):
     def closeEvent(self, event) -> None:
         self.stop = True
         return super().closeEvent(event)
+
+    def saveCredential(self):
+        userName = self.mainWindow.lineEdit_userName.text()
+        password = self.mainWindow.lineEdit_password.text()
+
+        file = open('credentials.txt','w')
+        file.write(userName+'\n')
+        file.write(password+'\n')
+        file.close()
+
+        self.mainWindow.stackedWidget.setCurrentIndex(4)
 
 if __name__ == "__main__":
     app = QApplication([])

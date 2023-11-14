@@ -1,7 +1,7 @@
 {
     "files": [
         "SLTGo.py",
-        "mainwindow.ui",
-        "resource.qrc"
+        "__Interface__/mainwindow.ui",
+        "__Interface__/resource.qrc"
     ]
 }

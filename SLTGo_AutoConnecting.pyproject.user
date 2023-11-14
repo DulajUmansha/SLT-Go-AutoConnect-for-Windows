@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 10.0.83, 2023-10-30T12:24:01. -->
+<!-- Written by QtCreator 10.0.83, 2023-11-14T16:15:46. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -143,11 +143,13 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">SLTGo.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/Codes/QT Projects/SLTGo_AutoConnecting/SLTGo.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Codes/QT Projects/SLTGo_AutoConnecting/SLTGo.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">SLTGo.py2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.D:/Projects/QT Projects/SLTGo_AutoConnecting - Copy/SLTGo.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">D:/Projects/QT Projects/SLTGo_AutoConnecting - Copy/SLTGo.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">D:\Projects\QT Projects\SLTGo_AutoConnecting - Copy\SLTGo.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Projects/QT Projects/SLTGo_AutoConnecting - Copy</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
