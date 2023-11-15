@@ -1,2 +1,2 @@
 # SLT-Go-AutoConnect-for-Windows
-![Screenshot 2023-11-14 163346](https://github.com/DulajUmansha/SLT-Go-AutoConnect-for-Windows/assets/89386135/2156a8df-bfef-4549-abc7-be0cff600e67)
+![SLT-go](https://github.com/DulajUmansha/SLT-Go-AutoConnect-for-Windows/assets/89386135/9c61859e-fd2a-467f-b546-32b71be20279)
