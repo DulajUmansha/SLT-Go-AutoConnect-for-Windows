@@ -63,8 +63,7 @@ class SLTLogin():
       
    def enterCreditnals(self):
       file = open('credentials.txt','r')
-      data = file.read()
-      print(data[0])
+      data = file.read().split("\n")
       try:
          btniID = "acceptButton"
          cookiesBtn = self.driver.find_element(By.CLASS_NAME,value=btniID)
@@ -73,11 +72,11 @@ class SLTLogin():
 
       btniID = "userFake"
       sltUsername = self.driver.find_element(By.ID,value=btniID)
-      sltUsername.send_keys(data[0])
+      sltUsername.send_keys(data[0].strip())
 
       btniID = "password"
       sltpassword = self.driver.find_element(By.ID,value=btniID)
-      sltpassword.send_keys(data[1])
+      sltpassword.send_keys(data[1].strip())
 
    def clickLogin(self):
       btniID = "login"

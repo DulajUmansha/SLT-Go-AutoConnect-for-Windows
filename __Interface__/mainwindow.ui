@@ -23,7 +23,7 @@
    <string notr="true">SLT Go</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resource.qrc">
+   <iconset>
     <normaloff>:/icon/__Interface__/resource/icon/AF_FON_RGB_white.png</normaloff>:/icon/__Interface__/resource/icon/AF_FON_RGB_white.png</iconset>
   </property>
   <property name="windowOpacity">
@@ -102,7 +102,7 @@ QLabel{
             <item>
              <widget class="QPushButton" name="homeBtn">
               <property name="icon">
-               <iconset resource="resource.qrc">
+               <iconset>
                 <normaloff>:/icon/__Interface__/resource/icon/home.svg</normaloff>:/icon/__Interface__/resource/icon/home.svg</iconset>
               </property>
               <property name="iconSize">
@@ -122,7 +122,7 @@ QLabel{
             <item>
              <widget class="QPushButton" name="aboutBtn">
               <property name="icon">
-               <iconset resource="resource.qrc">
+               <iconset>
                 <normaloff>:/icon/__Interface__/resource/icon/info.svg</normaloff>:/icon/__Interface__/resource/icon/info.svg</iconset>
               </property>
               <property name="iconSize">
@@ -170,7 +170,7 @@ QLabel{
              <string>  Connect</string>
             </property>
             <property name="icon">
-             <iconset resource="resource.qrc">
+             <iconset>
               <normaloff>:/icon/__Interface__/resource/icon/link.svg</normaloff>:/icon/__Interface__/resource/icon/link.svg</iconset>
             </property>
             <property name="checkable">
@@ -216,7 +216,7 @@ QLabel{
              <string>  Disconnect</string>
             </property>
             <property name="icon">
-             <iconset resource="resource.qrc">
+             <iconset>
               <normaloff>:/icon/__Interface__/resource/icon/link-slash.svg</normaloff>:/icon/__Interface__/resource/icon/link-slash.svg</iconset>
             </property>
             <property name="flat">
@@ -254,7 +254,7 @@ QLabel{
              <string> Profile</string>
             </property>
             <property name="icon">
-             <iconset resource="resource.qrc">
+             <iconset>
               <normaloff>:/icon/__Interface__/resource/icon/user.svg</normaloff>:/icon/__Interface__/resource/icon/user.svg</iconset>
             </property>
             <property name="flat">
@@ -268,7 +268,7 @@ QLabel{
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>4</number>
+          <number>5</number>
          </property>
          <widget class="QWidget" name="page_disconnect"/>
          <widget class="QWidget" name="page_connect"/>
@@ -367,7 +367,7 @@ QLabel{
               <string/>
              </property>
              <property name="icon">
-              <iconset resource="resource.qrc">
+              <iconset>
                <normaloff>:/icon/__Interface__/resource/icon/disk.svg</normaloff>:/icon/__Interface__/resource/icon/disk.svg</iconset>
              </property>
             </widget>
@@ -382,8 +382,6 @@ QLabel{
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
