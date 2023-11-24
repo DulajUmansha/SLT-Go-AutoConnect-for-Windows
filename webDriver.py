@@ -1,22 +1,35 @@
 from selenium import webdriver
 import selenium
-from selenium.webdriver.chrome.options import Options
-import getpass
+
 
 class Divers:
     def __init__(self) -> None:
         pass
-        
+
     def choose(self):
-        browser_options = Options()
-        browser_options.add_argument('headless')
         try:
-            return (webdriver.Chrome(browser_options))
+            from selenium.webdriver.chrome.options import Options
+            browser_options = Options()
+            # browser_options.add_argument("headless")
+            return webdriver.Chrome(browser_options)
+        
         except selenium.common.NoSuchDriverException:
-            return (webdriver.Edge())
+            from selenium.webdriver.edge.options import Options
+            browser_options = Options()
+            # browser_options.add_argument("headless")
+            return webdriver.Edge(browser_options)
+        
         except selenium.common.NoSuchDriverException:
-            return (webdriver.Firefox())
+            from selenium.webdriver.firefox.options import Options
+            browser_options = Options()
+            # browser_options.add_argument("headless")
+            return webdriver.Firefox(browser_options)
+        
         except selenium.common.NoSuchDriverException:
-            return (webdriver.Safari())
+            from selenium.webdriver.safari.options import Options
+            browser_options = Options()
+            # browser_options.add_argument("headless")
+            return webdriver.Safari(browser_options)
+        
         except:
-            return(None)
+            return None

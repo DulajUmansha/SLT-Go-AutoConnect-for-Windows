@@ -1,12 +1,10 @@
-import getpass
-import socket
 import subprocess
 import time
 import requests
 from webDriver import Divers
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.edge.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class WiFiLogin():
    def __init__(self):
@@ -44,13 +42,7 @@ class WiFiLogin():
 class SLTLogin():
    def __init__(self):
       driver = Divers()
-      chrome_options = Options()
-      try:
-         chrome_options.add_argument("--user-data-dir=C:\\Users\\{}\\AppData\\Local\\Google\\Chrome\\User Data".format(getpass.getuser()))
-         chrome_options.add_argument('--profile-directory=Profile 1')
-         self.driver = webdriver.Chrome(options=chrome_options)
-      except:
-         self.driver = driver.choose()
+      self.driver = driver.choose()
 
    def openNewLink(self,link="http://www.msftconnecttest.com/redirect"):
       self.driver.get(link)
@@ -76,13 +68,21 @@ class SLTLogin():
 
       btniID = "password"
       sltpassword = self.driver.find_element(By.ID,value=btniID)
+      sltpassword.clear()
       sltpassword.send_keys(data[1].strip())
+
+      # f = WebDriverWait(self.driver).until(EC.presence_of_element_located((By.CLASS_NAME, 'error')))
+      # s = WebDriverWait(self.driver).until(EC.presence_of_element_located((By.CLASS_NAME, 'success')))
+
 
    def clickLogin(self):
       btniID = "login"
       sltLogBtn = self.driver.find_element(By.ID,value=btniID)
       sltLogBtn.click()
 
+   def clickLogoff(self):
+      self.driver.find_element(By.CLASS_NAME,value='logoffButton').click()
+     
    def closeWebbrowser(self):
       self.driver.close()
 

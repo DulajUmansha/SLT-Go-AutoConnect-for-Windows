@@ -1,10 +1,8 @@
 # This Python file uses the following encoding: utf-8
 import sys
-import PySide6.QtGui
 from PySide6.QtWidgets import QApplication, QMainWindow
 from __Interface__.ui_mainwindow import Ui_MainWindow as mainWindowUI
 from __Interface__.rc_resource import *
-#from Custom_Widgets.Widgets import loadJsonStyle
 from logic import SLTLogin,WiFiLogin
 import threading
 import time
@@ -16,7 +14,6 @@ class MainWindow(QMainWindow):
         self.wifiLogin = WiFiLogin()
         self.stop = False
         self.mainWindow.setupUi(self)
-        #loadJsonStyle(self,self.mainWindow)
 
     def buttonClick(self):
         self.mainWindow.connectBtn.clicked.connect(self.connectBtn)
@@ -54,6 +51,7 @@ class MainWindow(QMainWindow):
 
     def disconnectBtn(self):
         self.stop = True
+        self.sltLogin.clickLogoff()
         self.wifiLogin.disconnectFromSLTGo()
 
     def checkPeroidInternetConn(self):
